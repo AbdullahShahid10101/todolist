@@ -1,0 +1,227 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 63vw
+}
+
+.task-card {
+  display: flex;
+  background-color: var(--seccolour);
+  max-width: 380px;
+  height: 300px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.task-card h2 {
+  text-align: start;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 700px;
+width: 250px;
+
+  color:var(--taskhcolour);
+}
+.description{
+ text-align: start;
+ margin-left: 30px;
+ font-weight:400px;
+ border: none;
+ background-color: transparent;
+ color: var(--taskdescolor);
+ width: 240px;
+  height: 30px;
+  font-size: 14px;
+resize: none;
+overflow: auto;
+}
+.description:focus{
+ outline: none; 
+}
+.categoryandpriorty{
+  display: flex;
+  flex-direction: column;
+   width: 250px;
+  margin-left: 30px;
+  height: 100px;
+}
+.Category{
+   display: flex;
+  flex-direction: row;
+
+}
+.Priorty{
+   display: flex;
+  flex-direction: row;
+  
+}
+.date{
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+   width: 250px;
+}
+.date-heading{
+  font-weight: bold;
+  color: #4B332F;
+}
+.actual-date{
+   color: #4B332F;
+}
+
+.task-info {
+  flex: 1;
+  max-width: 280px;
+}
+
+.task-actions {
+  position: relative;
+  align-items: center;
+  margin-top: 50px;
+  display: flex;
+  width: 190px;
+  flex-direction: column;
+  gap:20px;
+
+}
+
+.task-actions .btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px;
+}
+
+.task-actions .btn:hover {
+  transform: scale(1.1);
+}
+.task-actions .markStatus{
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+  height: 45px;
+}
+
+ .markStatusSelect-box {
+  border: transparent;
+  justify-content: center;
+  
+  appearance: none;
+  padding: 5% 10%;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--textcolour);
+}
+
+.markStatus::before,
+.markStatus::after {
+  --size1: 0.3em;
+  position: absolute;
+  content: "";
+  right:0.7em;
+  pointer-events: none;
+  color: var(--textcolour);
+}
+
+.markStatus::before {
+  border-left: var(--size1) solid transparent;
+  border-right: var(--size1) solid transparent;
+  border-bottom: var(--size1) solid white;
+  top: 40%;
+}
+
+.markStatus::after {
+  border-left: var(--size1) solid transparent;
+  border-right: var(--size1) solid transparent;
+  border-top: var(--size1) solid white;
+  top: 55%;
+}
+@media (max-width:1873px) {
+  .card-container {
+  margin-left: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+.task-card{
+  max-width: unset;
+width:49%;
+}
+}
+@media (max-width:1761px) {
+  .card-container {
+  width: 63VW;
+}
+.task-card{
+max-width:30VW;
+justify-content: space-between;
+min-width: 380px;
+}
+}
+@media (max-width:1262px) {
+  .card-container {
+  flex-direction: column;
+  width: 50vw;
+}
+.task-card{
+   max-width:100%;
+  width: 100%;
+  gap: 2em;
+}
+}
+@media (max-width:1023px) {
+  .card-container {
+  width: 100%;
+}
+.task-card{
+  width: 100%;
+  min-width: 425px;
+    height: 300px;
+}
+}
+@media (max-width:600px) {
+.card-container {
+   max-width: 100vw;
+
+}
+.task-card{
+  width: 100%;
+  min-width: 300px;
+  height: 300px;
+  padding:20px 0px ;
+  gap: unset;
+  flex-direction: column;
+}
+.task-card h2 {
+margin-top: 10px;
+width: 220px;
+}
+.description{
+margin-left:20px ;
+ width: 220px;
+}
+.task-actions {
+  width: 80%;
+  margin-top: 0px;
+  align-self:  center;
+  justify-content: center;
+  flex-direction: row;
+  gap:unset;
+
+}
+ .markStatusSelect-box {
+  width: 160px;
+}
+.date{
+  width: 200px;
+}
+}

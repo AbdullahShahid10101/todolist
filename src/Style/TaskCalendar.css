@@ -1,0 +1,82 @@
+
+.react-calendar {
+  border:none;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+.dateAndday-container {
+  text-align: left;
+  margin-top: 0%;
+}
+.dateAndday-container h1{
+  font-style: italic;
+  color: var(--textcolour);
+  margin-top: -15px;
+}
+.DisplayDay {
+  font-family: 'Island Moments';
+  font-size: 32px;
+  font-style: italic;
+  color:#f29494;
+
+}
+
+.DisplayDate {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.react-calendar__tile {
+  border-radius: 10px;
+  padding: 0.75rem;
+  transition: background 0.3s;
+}
+
+.react-calendar__tile--active {
+  background: #f29494 !important;
+  color: white;
+}
+
+.react-calendar__tile--now {
+  background: #eeeeee;
+}
+
+.highlight {
+  background-color: #f29494 !important;
+  color: white;
+}
+
+@media only screen and (max-width: 1023px) {
+ 
+  .react-calendar {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    margin-left: 0%;
+  }
+.dateAndday-container {
+  text-align:left;
+  margin-left: 0%;
+  width: 100%;
+}
+}
+@media only screen and (max-width: 600px) {
+ 
+  .react-calendar {
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    margin-left: 0%;
+    height: 330px;
+  }
+.dateAndday-container {
+  text-align:left;
+  margin-left: 0%;
+  width: 100%;
+}
+}

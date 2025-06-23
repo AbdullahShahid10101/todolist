@@ -1,0 +1,90 @@
+.status{
+  display: flex;
+  position: relative;
+  width: 100%;
+gap:10px;
+  margin-top: 10vh;
+}
+.completeStatus{
+    background-color: var(--seccolour);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700px;
+   width: 103px;
+    height: 103x;
+    color: var(--compeletecolourtext);
+}
+.completeStatus h2 {
+    padding-top: 1.5em;
+  text-align: center;
+ font-size:12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.completeStatus p{
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.pendingStatus{
+    background-color: var(--pendingcolour);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700px;
+     width: 103px;
+    height: 103x;
+    color: var(--pendingcolourtext);
+}
+.pendingStatus h2 {
+padding-top: 1.5em;
+  text-align: center;
+  font-size:12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.pendingStatus p{
+ font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.inprogressStatus{
+    background-color: var(--seccolour);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700px;
+    width: 103px;
+    height: 103x;
+    color: var(--compeletecolourtext);
+}
+
+.inprogressStatus h2{
+  padding-top: 1.5em;
+  text-align: center;
+  font-size:12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+.inprogressStatus p{
+   font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 12px;
+}
+@media (max-width: 1023px) { 
+  .status {
+   justify-content: center;
+    width: 100%;
+  }
+} 
+
+

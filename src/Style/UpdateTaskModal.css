@@ -1,0 +1,185 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal {
+  background:var(--colour);
+  padding:10px;
+  padding-top: 0px;
+  width: 400px;
+  max-width: 90%;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.UpdateTitle{
+background-color: var(--inputcolour);
+ border: 0.32px solid var(--inputbordercolour);
+ border-radius: 5px;
+  width: 395px;
+ height: 35px;
+}
+.UpdateDescription{
+background-color: var(--inputcolour);
+ border: 0.32px solid var(--inputbordercolour);
+ border-radius: 5px;
+ resize: none;
+ width: 395px;
+ height: 60px;
+}
+.selectField {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+
+.CategoryUpdateForm {
+
+  display: flex;
+  margin-top: 7px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 45px;
+
+}
+
+.Categoryselect-box {
+  border: transparent;
+  justify-content: center;
+  text-align: center;
+  appearance: none;
+  padding: 5px 5px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.7em;
+  font-family: 'Inter';
+  font-weight: bold;
+  color: var(--textcolour);
+  background-color: var(--seccolour);
+}
+
+.CategoryUpdateForm::before,
+.CategoryUpdateForm::after {
+  --size1: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 10px;
+  pointer-events: none;
+  color: var(--textcolour);
+}
+
+.CategoryUpdateForm::before {
+  border-left: var(--size1) solid transparent;
+  border-right: var(--size1) solid transparent;
+  border-bottom: var(--size1) solid black;
+  top: 40%;
+}
+
+.CategoryUpdateForm::after {
+  border-left: var(--size1) solid transparent;
+  border-right: var(--size1) solid transparent;
+  border-top: var(--size1) solid black;
+  top: 55%;
+}
+.PriortyUpdateForm {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  position: relative;
+  width: 100%;
+  height: 45px;
+
+}
+
+.Priortyselect-box {
+  text-align: center;
+  border: transparent;
+  justify-content: center;
+  appearance: none;
+  padding: 5px 5px;
+  align-content: center;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 0.7em;
+  font-family: 'Inter';
+  font-weight: bold;
+  color: var(--textcolour);
+  background-color: var(--seccolour);
+}
+
+.PriortyUpdateForm::before,
+.PriortyUpdateForm::after {
+  --size2: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 10px;
+  pointer-events: none;
+  color: var(--textcolour);
+}
+
+.PriortyUpdateForm::before {
+  border-left: var(--size2) solid transparent;
+  border-right: var(--size2) solid transparent;
+  border-bottom: var(--size2) solid black;
+  top: 40%;
+}
+
+.PriortyUpdateForm::after {
+  border-left: var(--size2) solid transparent;
+  border-right: var(--size2) solid transparent;
+  border-top: var(--size2) solid black;
+  top: 55%;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.UpdateButton{
+  background-color: var(--buttoncolour);
+  color: white;
+  border: solid;
+  padding: 3% 3%;
+  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.CloseButton{
+  background-color: red;
+  color: white;
+  border: solid;
+  padding: 3% 3%;
+  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+@media (max-width: 1023px) {
+    .modal{
+
+  width: 70%;
+}
+.UpdateTitle{
+
+  width: 90%;
+}
+.UpdateDescription{
+
+  width: 90%;
+}
+}
